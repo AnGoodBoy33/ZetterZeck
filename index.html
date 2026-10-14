@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3Schools How TO - Code snippets for HTML, CSS and JavaScript</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER (fixed) ===== -->
+  <header class="site-header">
+    <div class="top">
+      <a class="brand" href="#"><img src="images/logo.png" alt="W3Schools"></a>
+      <nav class="menu">
+        <a href="#">Tutorials ▾</a><a href="#">References ▾</a><a href="#">Exercises ▾</a><a href="#">Certificates ▾</a>
+      </nav>
+      <div class="sbox">
+        <input type="text" placeholder="Search...">
+        <svg width="18" height="18" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="7" fill="none" stroke="#222" stroke-width="2"/><path d="M16 16l5 5" stroke="#222" stroke-width="2"/></svg>
+      </div>
+      <span class="more">⋮</span>
+      <div class="right">
+        <a href="#">Upgrade</a>
+        <a class="new" href="#">App<i>NEW</i></a>
+        <a class="paid" href="#">Paid Courses</a>
+        <a class="signin" href="#">Sign In</a>
+      </div>
+    </div>
+    <nav class="tabs">
+      <a href="#">HTML</a><a href="#">CSS</a><a href="#">JAVASCRIPT</a><a href="#">SQL</a><a href="#">PYTHON</a>
+      <a href="#">JAVA</a><a href="#">PHP</a><a href="#">C</a><a href="#">C++</a><a href="#">C#</a><a href="#">AWS</a>
+      <a href="#">W3.CSS</a><a class="on" href="#">HOW TO</a><a href="#">BOOTSTRAP</a><a href="#">REACT</a>
+      <a href="#">MYSQL</a><a href="#">JQUERY</a><a href="#">EXCEL</a><a href="#">XML</a><a href="#">DJANGO</a>
+      <a class="arr" href="#">›</a>
+    </nav>
+  </header>
+
+  <!-- ===== SIDEBAR (fixed, bisa di-scroll sendiri) ===== -->
+  <div class="wrap">
+
+  <aside class="side">
+    <input class="sin" type="text" placeholder="Search...">
+    <h4>How To</h4>
+    <a class="on" href="#">HowTo Home</a>
+    <h4>Menus</h4>
+    <a href="#">Icon Bar</a><a href="#">Menu Icon</a><a href="#">Accordion</a><a href="#">Tabs</a>
+    <a href="#">Vertical Tabs</a><a href="#">Tab Headers</a><a href="#">Full Page Tabs</a><a href="#">Hover Tabs</a>
+    <a href="#">Top Navigation</a><a href="#">Responsive Topnav</a><a href="#">Split Navigation</a><a href="#">Navbar with Icons</a>
+    <a href="#">Search Menu</a><a href="#">Search Bar</a><a href="#">Fixed Sidebar</a><a href="#">Side Navigation</a>
+    <a href="#">Responsive Sidebar</a><a href="#">Fullscreen Navigation</a><a href="#">Off-Canvas Menu</a><a href="#">Hover Sidenav Buttons</a>
+    <a href="#">Sidebar with Icons</a><a href="#">Horizontal Scroll Menu</a><a href="#">Vertical Menu</a><a href="#">Bottom Navigation</a>
+    <a href="#">Responsive Bottom Nav</a><a href="#">Bottom Border Nav Links</a><a href="#">Right Aligned Menu Links</a><a href="#">Centered Menu Link</a>
+    <a href="#">Equal Width Menu Links</a><a href="#">Fixed Menu</a><a href="#">Slide Down Bar on Scroll</a><a href="#">Hide Navbar on Scroll</a>
+    <a href="#">Shrink Navbar on Scroll</a><a href="#">Sticky Navbar</a><a href="#">Navbar on Image</a><a href="#">Hover Dropdowns</a>
+    <a href="#">Click Dropdowns</a><a href="#">Cascading Dropdown</a><a href="#">Dropdown in Topnav</a><a href="#">Dropdown in Sidenav</a>
+    <a href="#">Resp Navbar Dropdown</a><a href="#">Subnavigation Menu</a><a href="#">Dropup</a><a href="#">Mega Menu</a>
+    <a href="#">Mobile Menu</a><a href="#">Curtain Menu</a><a href="#">Collapsed Sidebar</a><a href="#">Collapsed Sidepanel</a>
+    <a href="#">Pagination</a><a href="#">Breadcrumbs</a><a href="#">Button Group</a><a href="#">Vertical Button Group</a>
+    <a href="#">Sticky Social Bar</a><a href="#">Pill Navigation</a><a href="#">Responsive Header</a><a href="#">Login Form in Navbar</a>
+    <h4>Images</h4>
+    <a href="#">Slideshow</a><a href="#">Slideshow Gallery</a><a href="#">Modal Image</a>
+    <a href="#">Lightbox</a><a href="#">Image Hover Overlay</a><a href="#">Tab Image Gallery</a>
+    <h4>Buttons</h4>
+    <a href="#">Alert Buttons</a><a href="#">Outline Buttons</a><a href="#">Pill Buttons</a><a href="#">Round Buttons</a>
+    <h4>Forms</h4>
+    <a href="#">Login Form</a><a href="#">Signup Form</a><a href="#">Contact Form</a><a href="#">Newsletter</a>
+    <h4>Tables</h4>
+    <a href="#">Zebra Striped Table</a><a href="#">Responsive Tables</a>
+    <h4>More</h4>
+    <a href="#">Modal Box</a><a href="#">Change Background on Scroll</a><a href="#">Tooltips</a><a href="#">Timeline</a>
+    <h4>Grid</h4>
+    <a href="#">2 Column Layout</a><a href="#">3 Column Layout</a><a href="#">Blog Layout</a>
+    <h4>Filters</h4>
+    <a href="#">Filter List</a><a href="#">Sort Table</a>
+    <h4>Google</h4>
+    <a href="#">Google Fonts</a><a href="#">Google Charts</a>
+    <h4>Converters</h4>
+    <a href="#">Convert Weight</a><a href="#">Convert Temperature</a>
+  </aside>
+
+  <!-- ===== MAIN ===== -->
+  <main class="main">
+
+    <h1>W3Schools How TO</h1>
+    <p style="margin-bottom: 20px;">Code snippets for HTML, CSS and JavaScript.</p>
+
+
+    <!-- 1. SLIDESHOW (panah ❮ ❯ dan titik) -->
+    <section class="card">
+      <h2>Slideshow</h2>
+      <div class="demo rs">
+        <input type="radio" name="g1" id="a1" checked><input type="radio" name="g1" id="a2"><input type="radio" name="g1" id="a3"><input type="radio" name="g1" id="a4">
+        <div class="slides">
+          <!-- GAMBAR: images/nature-wide.jpg -->
+          <div><img src="images/nature-wide.jpg" alt=""><span class="cap">Caption Text</span><label class="prev" for="a4">❮</label><label class="next" for="a2">❯</label></div>
+          <!-- GAMBAR: images/snow-wide.jpg -->
+          <div><img src="images/snow-wide.jpg" alt=""><span class="cap">Caption Two</span><label class="prev" for="a1">❮</label><label class="next" for="a3">❯</label></div>
+          <!-- GAMBAR: images/mountains-wide.jpg -->
+          <div><img src="images/mountains-wide.jpg" alt=""><span class="cap">Caption Three</span><label class="prev" for="a2">❮</label><label class="next" for="a4">❯</label></div>
+          <!-- GAMBAR: images/lights-wide.jpg -->
+          <div><img src="images/lights-wide.jpg" alt=""><span class="cap">Caption Four</span><label class="prev" for="a3">❮</label><label class="next" for="a1">❯</label></div>
+        </div>
+        <div class="dots"><label for="a1"></label><label for="a2"></label><label for="a3"></label><label for="a4"></label></div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 2. LOGIN FORM (tombol Login membuka modal) -->
+    <section class="card">
+      <h2>Login Form</h2>
+      <div class="demo">
+        <input class="tog" type="checkbox" id="lg">
+        <label class="btn-g" for="lg">Login</label>
+        <div class="modal">
+          <form class="mbox">
+            <label class="x" for="lg">×</label>
+            <!-- GAMBAR: images/avatar2.png -->
+            <img class="avatar" src="images/avatar2.png" alt="Avatar">
+            <div class="mbody">
+              <label>Username</label>
+              <input type="text" placeholder="Enter Username">
+              <label>Password</label>
+              <input type="password" placeholder="Enter Password">
+              <button type="button">Login</button>
+              <label class="rem"><input type="checkbox" checked> Remember me</label>
+            </div>
+            <div class="mfoot"><label class="cancel" for="lg">Cancel</label><span>Forgot <a href="#">password?</a></span></div>
+          </form>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 3. ACCORDION -->
+    <section class="card">
+      <h2>Accordion</h2>
+      <div class="demo">
+        <details name="acc" open><summary>Section 1</summary><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details>
+        <details name="acc"><summary>Section 2</summary><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details>
+        <details name="acc"><summary>Section 3</summary><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></details>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 4. HOVER DROPDOWNS -->
+    <section class="card">
+      <h2>Hover Dropdowns</h2>
+      <div class="demo">
+        <div class="dd hd">
+          <span class="btn-g">Hover</span>
+          <div class="dd-menu"><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a></div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 5. CLICK DROPDOWNS -->
+    <section class="card">
+      <h2>Click Dropdowns</h2>
+      <div class="demo">
+        <div class="dd">
+          <input class="tog" type="checkbox" id="cd">
+          <label class="btn-g" for="cd">Click</label>
+          <div class="dd-menu"><a href="#">Link 1</a><a href="#">Link 2</a><a href="#">Link 3</a></div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 6. SIDE NAVIGATION -->
+    <section class="card">
+      <h2>Side Navigation</h2>
+      <div class="demo sd">
+        <input class="tog" type="checkbox" id="sn1"><input class="tog" type="checkbox" id="sn2">
+        <label class="btn-g" for="sn1">Sidenav overlay</label>
+        <label class="btn-g" for="sn2">Sidenav w/opacity</label>
+        <div class="sn sn1"><label class="x" for="sn1" style="color:#fff">×</label><a href="#">About</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Contact</a></div>
+        <div class="sn sn2 sn-op"><label class="x" for="sn2" style="color:#fff">×</label><a href="#">About</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Contact</a></div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 7. FIXED SIDEBAR -->
+    <section class="card">
+      <h2>Fixed Sidebar</h2>
+      <div class="demo fx">
+        <div class="fx-side"><a href="#">Home</a><a href="#">News</a><a href="#">Contact</a><a href="#">About</a></div>
+        <div class="fx-main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 8. MODAL BOX -->
+    <section class="card">
+      <h2>Modal Box</h2>
+      <div class="demo">
+        <input class="tog" type="checkbox" id="mb">
+        <label class="btn-g" for="mb">Open Modal</label>
+        <div class="modal">
+          <div class="mbox2">
+            <div class="mh"><label class="x" for="mb">×</label>Modal Header</div>
+            <div class="mbd"><p>Hello World!</p><p>Modals are awesome!</p></div>
+            <div class="mf">Modal Footer</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 9. MODAL IMAGE -->
+    <section class="card">
+      <h2>Modal Image</h2>
+      <div class="demo">
+        <input class="tog" type="checkbox" id="mi">
+        <label class="thumb" for="mi"><!-- GAMBAR: images/snow-wide.jpg --><img src="images/snow-wide.jpg" alt="Snow"></label>
+        <div class="modal">
+          <div class="mimg">
+            <label class="x" for="mi">×</label>
+            <img src="images/snow-wide.jpg" alt="Snow">
+            <p>Snow</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 10. LIGHTBOX (klik gambar untuk membuka) -->
+    <section class="card">
+      <h2>Lightbox</h2>
+      <div class="demo gal">
+        <a href="#lb1"><img src="images/nature-wide.jpg" alt="Nature"></a>
+        <a href="#lb2"><img src="images/snow-wide.jpg" alt="Snow"></a>
+        <a href="#lb3"><img src="images/mountains-wide.jpg" alt="Mountains"></a>
+      </div>
+      <div class="lb" id="lb1"><img src="images/nature-wide.jpg" alt=""><a class="lbp" href="#lb3">❮</a><a class="lbn" href="#lb2">❯</a><a class="lbx" href="#none">×</a></div>
+      <div class="lb" id="lb2"><img src="images/snow-wide.jpg" alt=""><a class="lbp" href="#lb1">❮</a><a class="lbn" href="#lb3">❯</a><a class="lbx" href="#none">×</a></div>
+      <div class="lb" id="lb3"><img src="images/mountains-wide.jpg" alt=""><a class="lbp" href="#lb2">❮</a><a class="lbn" href="#lb1">❯</a><a class="lbx" href="#none">×</a></div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 11. SLIDESHOW GALLERY -->
+    <section class="card">
+      <h2>Slideshow Gallery</h2>
+      <div class="demo rs">
+        <input type="radio" name="g2" id="b1" checked><input type="radio" name="g2" id="b2"><input type="radio" name="g2" id="b3"><input type="radio" name="g2" id="b4"><input type="radio" name="g2" id="b5"><input type="radio" name="g2" id="b6">
+        <div class="slides">
+          <div><img src="images/nature-wide.jpg" alt=""><label class="prev" for="b6">❮</label><label class="next" for="b2">❯</label></div>
+          <div><img src="images/snow-wide.jpg" alt=""><label class="prev" for="b1">❮</label><label class="next" for="b3">❯</label></div>
+          <div><img src="images/mountains-wide.jpg" alt=""><label class="prev" for="b2">❮</label><label class="next" for="b4">❯</label></div>
+          <div><img src="images/lights-wide.jpg" alt=""><label class="prev" for="b3">❮</label><label class="next" for="b5">❯</label></div>
+          <!-- GAMBAR: images/woods-wide.jpg -->
+          <div><img src="images/woods-wide.jpg" alt=""><label class="prev" for="b4">❮</label><label class="next" for="b6">❯</label></div>
+          <!-- GAMBAR: images/5terre-wide.jpg -->
+          <div><img src="images/5terre-wide.jpg" alt=""><label class="prev" for="b5">❮</label><label class="next" for="b1">❯</label></div>
+        </div>
+        <div class="thumbs">
+          <label for="b1"><img src="images/nature-wide.jpg" alt=""></label>
+          <label for="b2"><img src="images/snow-wide.jpg" alt=""></label>
+          <label for="b3"><img src="images/mountains-wide.jpg" alt=""></label>
+          <label for="b4"><img src="images/lights-wide.jpg" alt=""></label>
+          <label for="b5"><img src="images/woods-wide.jpg" alt=""></label>
+          <label for="b6"><img src="images/5terre-wide.jpg" alt=""></label>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 12. IMAGE HOVER OVERLAY -->
+    <section class="card">
+      <h2>Image Hover Overlay</h2>
+      <div class="demo">
+        <div class="overlay-box">
+          <!-- GAMBAR: images/avatar3.png -->
+          <img src="images/avatar3.png" alt="Avatar">
+          <div class="overlay">Hello World</div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 13. TABS -->
+    <section class="card">
+      <h2>Tabs</h2>
+      <div class="demo tg">
+        <input type="radio" name="t1" id="t1a" checked><input type="radio" name="t1" id="t1b"><input type="radio" name="t1" id="t1c">
+        <div class="nav"><label for="t1a">London</label><label for="t1b">Paris</label><label for="t1c">Tokyo</label></div>
+        <div class="panes">
+          <div><h3>London</h3><p>London is the capital city of England.</p></div>
+          <div><h3>Paris</h3><p>Paris is the capital of France.</p></div>
+          <div><h3>Tokyo</h3><p>Tokyo is the capital of Japan.</p></div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 14. VERTICAL TABS -->
+    <section class="card">
+      <h2>Vertical Tabs</h2>
+      <div class="demo tg vert">
+        <input type="radio" name="t2" id="t2a" checked><input type="radio" name="t2" id="t2b"><input type="radio" name="t2" id="t2c">
+        <div class="nav"><label for="t2a">London</label><label for="t2b">Paris</label><label for="t2c">Tokyo</label></div>
+        <div class="panes">
+          <div><h3>London</h3><p>London is the capital city of England.</p></div>
+          <div><h3>Paris</h3><p>Paris is the capital of France.</p></div>
+          <div><h3>Tokyo</h3><p>Tokyo is the capital of Japan.</p></div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 15. TAB IMAGE GALLERY -->
+    <section class="card">
+      <h2>Tab Image Gallery</h2>
+      <div class="demo tg tgi">
+        <input type="radio" name="t3" id="t3a" checked><input type="radio" name="t3" id="t3b"><input type="radio" name="t3" id="t3c">
+        <div class="nav">
+          <label for="t3a"><img src="images/nature-wide.jpg" alt=""></label>
+          <label for="t3b"><img src="images/snow-wide.jpg" alt=""></label>
+          <label for="t3c"><img src="images/lights-wide.jpg" alt=""></label>
+        </div>
+        <div class="panes">
+          <div><img src="images/nature-wide.jpg" alt=""><p>Nature</p></div>
+          <div><img src="images/snow-wide.jpg" alt=""><p>Snow</p></div>
+          <div><img src="images/lights-wide.jpg" alt=""><p>Northern Lights</p></div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 16. ALERT BUTTONS -->
+    <section class="card">
+      <h2>Alert Buttons</h2>
+      <div class="demo">
+        <button class="a-btn a-ok">Success</button>
+        <button class="a-btn a-inf">Info</button>
+        <button class="a-btn a-wrn">Warning</button>
+        <button class="a-btn a-dng">Danger</button>
+        <button class="a-btn a-dft">Default</button>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 17. OUTLINE BUTTONS -->
+    <section class="card">
+      <h2>Outline Buttons</h2>
+      <div class="demo">
+        <button class="o-btn o-ok">Success</button>
+        <button class="o-btn o-inf">Info</button>
+        <button class="o-btn o-wrn">Warning</button>
+        <button class="o-btn o-dng">Danger</button>
+        <button class="o-btn o-dft">Default</button>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 18. TOP NAVIGATION -->
+    <section class="card">
+      <h2>Top Navigation</h2>
+      <div class="demo">
+        <div class="tnav"><a class="on" href="#">Home</a><a href="#">News</a><a href="#">Contact</a><a href="#">About</a></div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 19. RESPONSIVE TOP NAVIGATION -->
+    <section class="card">
+      <h2>Responsive Top Navigation</h2>
+      <div class="demo">
+        <p style="margin-bottom: 12px;">Resize the browser window to see the effect:</p>
+        <div class="rnav">
+          <input class="tog" type="checkbox" id="rn">
+          <div class="rbar">
+            <a href="#">Home</a><a href="#">News</a><a href="#">Contact</a><a href="#">About</a>
+            <label for="rn">☰</label>
+          </div>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 20. FULLSCREEN NAVIGATION -->
+    <section class="card">
+      <h2>Fullscreen Navigation</h2>
+      <div class="demo">
+        <input class="tog" type="checkbox" id="f1"><input class="tog" type="checkbox" id="f2">
+        <label class="btn-g" for="f1">Slide Right</label>
+        <label class="btn-g" for="f2">Slide Down</label>
+        <div class="fs fs-r"><label class="x" for="f1">×</label><nav><a href="#">About</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Contact</a></nav></div>
+        <div class="fs fs-d"><label class="x" for="f2">×</label><nav><a href="#">About</a><a href="#">Services</a><a href="#">Clients</a><a href="#">Contact</a></nav></div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 21. LOGIN FORM IN NAVBAR -->
+    <section class="card">
+      <h2>Login Form in Navbar</h2>
+      <div class="demo">
+        <div class="lnav">
+          <a class="on" href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+          <form action="#">
+            <input type="text" placeholder="Username">
+            <input type="text" placeholder="Password">
+            <button type="button">Login</button>
+          </form>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- 22. CHANGE BACKGROUND ON SCROLL -->
+    <section class="card">
+      <h2>Change Background on Scroll</h2>
+      <div class="demo">
+        <div class="cbs">
+          <div class="cbs-nav"><a href="#">Home</a><a href="#">News</a><a href="#">Contact</a><a href="#">About</a></div>
+          <p>Scroll down inside this box to see the navigation bar change color.</p>
+          <!-- GAMBAR: images/nature-wide.jpg (dipakai ulang) -->
+          <img src="images/nature-wide.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+      </div>
+      <div class="card-foot"><a class="learn" href="#">Learn How To »</a></div>
+    </section>
+
+    <!-- PAGINATION -->
+    <nav class="pag">
+      <a class="dis" href="#">‹</a><a class="on" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a>
+      <a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">›</a>
+    </nav>
+
+
+  </main>
+
+  <!-- ===== KOLOM IKLAN KANAN ===== -->
+  <aside class="ads"><a href="#">REMOVE ADS</a></aside>
+
+  </div>
+
+  <!-- BANNER ADVENTURE (selebar layar) -->
+    <!-- BANNER ADVENTURE -->
+    <section class="adventure">
+      <!-- GAMBAR: images/adventure-scene.png -->
+      <img class="scene" src="images/adventure-scene.png" alt="">
+
+      <div class="progress-card">
+        <small>Free account</small>
+        <h3>Track your progress</h3>
+        <div class="stats">
+          <div>XP earned <b>0</b></div>
+          <div>Day streak <b>0</b></div>
+          <div>Spaces <b>0</b></div>
+          <div>League <b>—</b></div>
+        </div>
+        <a class="signin-b" href="#">Sign in to track progress</a>
+      </div>
+
+      <div class="adv-text">
+        <span class="adv-new">NEW</span>
+        <h2>Learn in Adventure Mode</h2>
+        <p>Coding fundamentals as bite-sized lessons and challenges.</p>
+        <div class="badges">
+          <!-- GAMBAR: images/icon-apple.png -->
+          <a class="badge" href="#"><img src="images/icon-apple.png" alt=""><span><small>Download on the</small><b>App Store</b></span></a>
+          <!-- GAMBAR: images/icon-google-play.png -->
+          <a class="badge" href="#"><img src="images/icon-google-play.png" alt=""><span><small>GET IT ON</small><b>Google Play</b></span></a>
+          <!-- GAMBAR: images/icon-browser.png -->
+          <a class="badge" href="#"><img src="images/icon-browser.png" alt=""><span><small>TRY NOW IN</small><b>Browser</b></span></a>
+        </div>
+      </div>
+
+      <!-- GAMBAR: images/adventure-sign.png -->
+      <img class="decor sign" src="images/adventure-sign.png" alt="">
+      <!-- GAMBAR: images/mascot-lynx.png -->
+      <img class="decor mascot" src="images/mascot-lynx.png" alt="">
+      <div class="bubble">Learn more about<br>Adventure Mode &gt;</div>
+
+      <!-- GAMBAR: images/tree-1.png s/d tree-4.png -->
+      <img class="decor tree-1" src="images/tree-1.png" alt="">
+      <img class="decor tree-2" src="images/tree-2.png" alt="">
+      <img class="decor tree-3" src="images/tree-3.png" alt="">
+      <img class="decor tree-4" src="images/tree-4.png" alt="">
+      <!-- GAMBAR: images/stump.png (dipakai 2x) -->
+      <img class="decor stump-1" src="images/stump.png" alt="">
+      <img class="decor stump-2" src="images/stump.png" alt="">
+      <!-- GAMBAR: images/stone.png (dipakai 2x) -->
+      <img class="decor stone-1" src="images/stone.png" alt="">
+      <img class="decor stone-2" src="images/stone.png" alt="">
+      <!-- GAMBAR: images/mushroom.png -->
+      <img class="decor mushroom" src="images/mushroom.png" alt="">
+      <!-- GAMBAR: images/chest.png -->
+      <img class="decor chest" src="images/chest.png" alt="">
+    </section>
+
+  <!-- FOOTER (selebar layar) -->
+    <!-- FOOTER -->
+    <footer class="foot">
+      <div class="fhead">
+        <!-- GAMBAR: images/logo.png (dipakai juga di footer, dibuat putih lewat CSS) -->
+        <img src="images/logo.png" alt="W3Schools">
+        <a href="#">PLUS</a><a href="#">SPACES</a><a href="#">GET CERTIFIED</a><a href="#">FOR TEACHERS</a><a href="#">PRACTICE</a><a href="#">CONTACT US</a>
+      </div>
+      <div class="fcols">
+        <div><h5>Top Tutorials</h5>
+          <a href="#">HTML Tutorial</a><a href="#">CSS Tutorial</a><a href="#">JavaScript Tutorial</a><a href="#">How To Tutorial</a><a href="#">SQL Tutorial</a><a href="#">Python Tutorial</a><a href="#">W3.CSS Tutorial</a><a href="#">Bootstrap Tutorial</a><a href="#">PHP Tutorial</a><a href="#">Java Tutorial</a><a href="#">C++ Tutorial</a><a href="#">jQuery Tutorial</a></div>
+        <div><h5>Top References</h5>
+          <a href="#">HTML Reference</a><a href="#">CSS Reference</a><a href="#">JavaScript Reference</a><a href="#">SQL Reference</a><a href="#">Python Reference</a><a href="#">W3.CSS Reference</a><a href="#">Bootstrap Reference</a><a href="#">PHP Reference</a><a href="#">HTML Colors</a><a href="#">Java Reference</a><a href="#">AngularJS Reference</a><a href="#">jQuery Reference</a></div>
+        <div><h5>Top Examples</h5>
+          <a href="#">HTML Examples</a><a href="#">CSS Examples</a><a href="#">JavaScript Examples</a><a href="#">How To Examples</a><a href="#">SQL Examples</a><a href="#">Python Examples</a><a href="#">W3.CSS Examples</a><a href="#">Bootstrap Examples</a><a href="#">PHP Examples</a><a href="#">Java Examples</a><a href="#">XML Examples</a><a href="#">jQuery Examples</a></div>
+        <div><h5>Get Certified</h5>
+          <a href="#">HTML Certificate</a><a href="#">CSS Certificate</a><a href="#">JavaScript Certificate</a><a href="#">Front End Certificate</a><a href="#">SQL Certificate</a><a href="#">Python Certificate</a><a href="#">PHP Certificate</a><a href="#">jQuery Certificate</a><a href="#">Java Certificate</a><a href="#">C++ Certificate</a><a href="#">C# Certificate</a><a href="#">XML Certificate</a></div>
+      </div>
+      <div class="fsocial">
+        <!-- GAMBAR: images/social-youtube.png, social-linkedin.png, social-discord.png, social-facebook.png, social-instagram.png -->
+        <img src="images/social-youtube.png" alt="">
+        <img src="images/social-linkedin.png" alt="">
+        <img src="images/social-discord.png" alt="">
+        <img src="images/social-facebook.png" alt="">
+        <img src="images/social-instagram.png" alt="">
+        <a href="#">FORUM</a><a href="#">ABOUT</a><a href="#">ACADEMY</a>
+      </div>
+      <p>Konten ini dibuat untuk belajar dan latihan. Kami berusaha menjaga keakuratannya, namun kebenarannya tidak dijamin sepenuhnya.</p>
+      <p>Hak cipta 1999-2026. Replika untuk latihan pribadi.</p>
+    </footer>
+
+</body>
+</html>
